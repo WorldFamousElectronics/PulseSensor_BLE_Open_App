@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C8504F118DA34FD006F3776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F018DA34FD006F3776 /* Foundation.framework */; };
+		6C8504F318DA34FD006F3776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F218DA34FD006F3776 /* CoreGraphics.framework */; };
+		6C8504F518DA34FD006F3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F418DA34FD006F3776 /* UIKit.framework */; };
+		6C8504FB18DA34FD006F3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C8504F918DA34FD006F3776 /* InfoPlist.strings */; };
+		6C8504FD18DA34FD006F3776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8504FC18DA34FD006F3776 /* main.m */; };
+		6C85050118DA34FD006F3776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85050018DA34FD006F3776 /* AppDelegate.m */; };
+		6C85050418DA34FD006F3776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C85050218DA34FD006F3776 /* Main.storyboard */; };
+		6C85050718DA34FD006F3776 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85050618DA34FD006F3776 /* ViewController.m */; };
+		6C85050918DA34FD006F3776 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C85050818DA34FD006F3776 /* Images.xcassets */; };
+		6C85051018DA34FD006F3776 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C85050F18DA34FD006F3776 /* XCTest.framework */; };
+		6C85051118DA34FD006F3776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F018DA34FD006F3776 /* Foundation.framework */; };
+		6C85051218DA34FD006F3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F418DA34FD006F3776 /* UIKit.framework */; };
+		6C85051A18DA34FD006F3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C85051818DA34FD006F3776 /* InfoPlist.strings */; };
+		6C85051C18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */; };
+		6C85052918DA3550006F3776 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85052718DA3550006F3776 /* BLE.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C85051318DA34FD006F3776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8504E518DA34FD006F3776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C8504EC18DA34FD006F3776;
+			remoteInfo = PulseSensor_BLE_Open_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C8504ED18DA34FD006F3776 /* PulseSensor_BLE_Open_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseSensor_BLE_Open_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8504F018DA34FD006F3776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C8504F218DA34FD006F3776 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6C8504F418DA34FD006F3776 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6C8504F818DA34FD006F3776 /* PulseSensor_BLE_Open_App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulseSensor_BLE_Open_App-Info.plist"; sourceTree = "<group>"; };
+		6C8504FA18DA34FD006F3776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C8504FC18DA34FD006F3776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C8504FE18DA34FD006F3776 /* PulseSensor_BLE_Open_App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PulseSensor_BLE_Open_App-Prefix.pch"; sourceTree = "<group>"; };
+		6C8504FF18DA34FD006F3776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C85050018DA34FD006F3776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C85050318DA34FD006F3776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C85050518DA34FD006F3776 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6C85050618DA34FD006F3776 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C85050818DA34FD006F3776 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C85050E18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseSensor_BLE_Open_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C85050F18DA34FD006F3776 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6C85051718DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulseSensor_BLE_Open_AppTests-Info.plist"; sourceTree = "<group>"; };
+		6C85051918DA34FD006F3776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseSensor_BLE_Open_AppTests.m; sourceTree = "<group>"; };
+		6C85052618DA3550006F3776 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		6C85052718DA3550006F3776 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		6C85052818DA3550006F3776 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C8504EA18DA34FD006F3776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8504F318DA34FD006F3776 /* CoreGraphics.framework in Frameworks */,
+				6C8504F518DA34FD006F3776 /* UIKit.framework in Frameworks */,
+				6C8504F118DA34FD006F3776 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C85050B18DA34FD006F3776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85051018DA34FD006F3776 /* XCTest.framework in Frameworks */,
+				6C85051218DA34FD006F3776 /* UIKit.framework in Frameworks */,
+				6C85051118DA34FD006F3776 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C8504E418DA34FD006F3776 = {
+			isa = PBXGroup;
+			children = (
+				6C8504F618DA34FD006F3776 /* PulseSensor_BLE_Open_App */,
+				6C85051518DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests */,
+				6C8504EF18DA34FD006F3776 /* Frameworks */,
+				6C8504EE18DA34FD006F3776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C8504EE18DA34FD006F3776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C8504ED18DA34FD006F3776 /* PulseSensor_BLE_Open_App.app */,
+				6C85050E18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C8504EF18DA34FD006F3776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C85052518DA3550006F3776 /* BLE_Framework */,
+				6C8504F018DA34FD006F3776 /* Foundation.framework */,
+				6C8504F218DA34FD006F3776 /* CoreGraphics.framework */,
+				6C8504F418DA34FD006F3776 /* UIKit.framework */,
+				6C85050F18DA34FD006F3776 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C8504F618DA34FD006F3776 /* PulseSensor_BLE_Open_App */ = {
+			isa = PBXGroup;
+			children = (
+				6C8504FF18DA34FD006F3776 /* AppDelegate.h */,
+				6C85050018DA34FD006F3776 /* AppDelegate.m */,
+				6C85050218DA34FD006F3776 /* Main.storyboard */,
+				6C85050518DA34FD006F3776 /* ViewController.h */,
+				6C85050618DA34FD006F3776 /* ViewController.m */,
+				6C85050818DA34FD006F3776 /* Images.xcassets */,
+				6C8504F718DA34FD006F3776 /* Supporting Files */,
+			);
+			path = PulseSensor_BLE_Open_App;
+			sourceTree = "<group>";
+		};
+		6C8504F718DA34FD006F3776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C8504F818DA34FD006F3776 /* PulseSensor_BLE_Open_App-Info.plist */,
+				6C8504F918DA34FD006F3776 /* InfoPlist.strings */,
+				6C8504FC18DA34FD006F3776 /* main.m */,
+				6C8504FE18DA34FD006F3776 /* PulseSensor_BLE_Open_App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C85051518DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */,
+				6C85051618DA34FD006F3776 /* Supporting Files */,
+			);
+			path = PulseSensor_BLE_Open_AppTests;
+			sourceTree = "<group>";
+		};
+		6C85051618DA34FD006F3776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C85051718DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests-Info.plist */,
+				6C85051818DA34FD006F3776 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C85052518DA3550006F3776 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				6C85052618DA3550006F3776 /* BLE.h */,
+				6C85052718DA3550006F3776 /* BLE.m */,
+				6C85052818DA3550006F3776 /* BLEDefines.h */,
+			);
+			path = BLE_Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C8504EC18DA34FD006F3776 /* PulseSensor_BLE_Open_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C85051F18DA34FD006F3776 /* Build configuration list for PBXNativeTarget "PulseSensor_BLE_Open_App" */;
+			buildPhases = (
+				6C8504E918DA34FD006F3776 /* Sources */,
+				6C8504EA18DA34FD006F3776 /* Frameworks */,
+				6C8504EB18DA34FD006F3776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseSensor_BLE_Open_App;
+			productName = PulseSensor_BLE_Open_App;
+			productReference = 6C8504ED18DA34FD006F3776 /* PulseSensor_BLE_Open_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C85050D18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C85052218DA34FD006F3776 /* Build configuration list for PBXNativeTarget "PulseSensor_BLE_Open_AppTests" */;
+			buildPhases = (
+				6C85050A18DA34FD006F3776 /* Sources */,
+				6C85050B18DA34FD006F3776 /* Frameworks */,
+				6C85050C18DA34FD006F3776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C85051418DA34FD006F3776 /* PBXTargetDependency */,
+			);
+			name = PulseSensor_BLE_Open_AppTests;
+			productName = PulseSensor_BLE_Open_AppTests;
+			productReference = 6C85050E18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C8504E518DA34FD006F3776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YuryGitman;
+				TargetAttributes = {
+					6C85050D18DA34FD006F3776 = {
+						TestTargetID = 6C8504EC18DA34FD006F3776;
+					};
+				};
+			};
+			buildConfigurationList = 6C8504E818DA34FD006F3776 /* Build configuration list for PBXProject "PulseSensor_BLE_Open_App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C8504E418DA34FD006F3776;
+			productRefGroup = 6C8504EE18DA34FD006F3776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C8504EC18DA34FD006F3776 /* PulseSensor_BLE_Open_App */,
+				6C85050D18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C8504EB18DA34FD006F3776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85050918DA34FD006F3776 /* Images.xcassets in Resources */,
+				6C8504FB18DA34FD006F3776 /* InfoPlist.strings in Resources */,
+				6C85050418DA34FD006F3776 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C85050C18DA34FD006F3776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85051A18DA34FD006F3776 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C8504E918DA34FD006F3776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85050718DA34FD006F3776 /* ViewController.m in Sources */,
+				6C85050118DA34FD006F3776 /* AppDelegate.m in Sources */,
+				6C8504FD18DA34FD006F3776 /* main.m in Sources */,
+				6C85052918DA3550006F3776 /* BLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C85050A18DA34FD006F3776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85051C18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C85051418DA34FD006F3776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C8504EC18DA34FD006F3776 /* PulseSensor_BLE_Open_App */;
+			targetProxy = 6C85051318DA34FD006F3776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C8504F918DA34FD006F3776 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C8504FA18DA34FD006F3776 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6C85050218DA34FD006F3776 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C85050318DA34FD006F3776 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C85051818DA34FD006F3776 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C85051918DA34FD006F3776 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C85051D18DA34FD006F3776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6C85051E18DA34FD006F3776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C85052018DA34FD006F3776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Prefix.pch";
+				INFOPLIST_FILE = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6C85052118DA34FD006F3776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Prefix.pch";
+				INFOPLIST_FILE = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6C85052318DA34FD006F3776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PulseSensor_BLE_Open_App.app/PulseSensor_BLE_Open_App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PulseSensor_BLE_Open_AppTests/PulseSensor_BLE_Open_AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6C85052418DA34FD006F3776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PulseSensor_BLE_Open_App.app/PulseSensor_BLE_Open_App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseSensor_BLE_Open_App/PulseSensor_BLE_Open_App-Prefix.pch";
+				INFOPLIST_FILE = "PulseSensor_BLE_Open_AppTests/PulseSensor_BLE_Open_AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C8504E818DA34FD006F3776 /* Build configuration list for PBXProject "PulseSensor_BLE_Open_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C85051D18DA34FD006F3776 /* Debug */,
+				6C85051E18DA34FD006F3776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C85051F18DA34FD006F3776 /* Build configuration list for PBXNativeTarget "PulseSensor_BLE_Open_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C85052018DA34FD006F3776 /* Debug */,
+				6C85052118DA34FD006F3776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C85052218DA34FD006F3776 /* Build configuration list for PBXNativeTarget "PulseSensor_BLE_Open_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C85052318DA34FD006F3776 /* Debug */,
+				6C85052418DA34FD006F3776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C8504E518DA34FD006F3776 /* Project object */;
+}
