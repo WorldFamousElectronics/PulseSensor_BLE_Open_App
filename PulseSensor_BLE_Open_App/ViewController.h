@@ -65,4 +65,7 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *progressBarAmp;
 
 
+//  For New Image Overlay
+@property (strong , nonatomic) IBOutlet UIImageView *myImageView;
+
 @end

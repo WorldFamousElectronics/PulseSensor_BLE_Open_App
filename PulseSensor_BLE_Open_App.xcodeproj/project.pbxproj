@@ -22,6 +22,10 @@
 		6C85051A18DA34FD006F3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C85051818DA34FD006F3776 /* InfoPlist.strings */; };
 		6C85051C18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */; };
 		6C85052918DA3550006F3776 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85052718DA3550006F3776 /* BLE.m */; };
+		6C94813218DB6330006E4103 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94812E18DB6330006E4103 /* 2.png */; };
+		6C94813318DB6330006E4103 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94812F18DB6330006E4103 /* 4.png */; };
+		6C94813418DB6330006E4103 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94813018DB6330006E4103 /* 3.png */; };
+		6C94813518DB6330006E4103 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94813118DB6330006E4103 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		6C85052618DA3550006F3776 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		6C85052718DA3550006F3776 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		6C85052818DA3550006F3776 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		6C94812E18DB6330006E4103 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6C94812F18DB6330006E4103 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		6C94813018DB6330006E4103 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		6C94813118DB6330006E4103 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,10 @@
 				6C85050218DA34FD006F3776 /* Main.storyboard */,
 				6C85050518DA34FD006F3776 /* ViewController.h */,
 				6C85050618DA34FD006F3776 /* ViewController.m */,
+				6C94812E18DB6330006E4103 /* 2.png */,
+				6C94812F18DB6330006E4103 /* 4.png */,
+				6C94813018DB6330006E4103 /* 3.png */,
+				6C94813118DB6330006E4103 /* 1.png */,
 				6C85050818DA34FD006F3776 /* Images.xcassets */,
 				6C8504F718DA34FD006F3776 /* Supporting Files */,
 			);
@@ -245,7 +257,11 @@
 			files = (
 				6C85050918DA34FD006F3776 /* Images.xcassets in Resources */,
 				6C8504FB18DA34FD006F3776 /* InfoPlist.strings in Resources */,
+				6C94813218DB6330006E4103 /* 2.png in Resources */,
+				6C94813418DB6330006E4103 /* 3.png in Resources */,
+				6C94813318DB6330006E4103 /* 4.png in Resources */,
 				6C85050418DA34FD006F3776 /* Main.storyboard in Resources */,
+				6C94813518DB6330006E4103 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +488,7 @@
 				6C85052118DA34FD006F3776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C85052218DA34FD006F3776 /* Build configuration list for PBXNativeTarget "PulseSensor_BLE_Open_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +497,7 @@
 				6C85052418DA34FD006F3776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

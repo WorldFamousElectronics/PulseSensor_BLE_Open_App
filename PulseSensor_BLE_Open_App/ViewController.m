@@ -100,6 +100,12 @@ int beatsSampleCounter = 0;
     [labelHeart setAlpha:0.2];
     [labelHeart setTextColor:[UIColor redColor]];
     
+    
+    // Setup For New UIImageView
+    _myImageView = [[UIImageView alloc] init];
+    [_myImageView setFrame:CGRectMake(0, 150, self.view.frame.size.width, self.view.frame.size.height)];
+
+    
 }
 
 -(void) resetBeatsHappenedTimeStampedArray{
@@ -553,6 +559,10 @@ int beatsSampleCounter = 0;
         
     }
     
+    // send Image Change method
+    [self displayEmotionalImageFromBPM:BPM];
+    
+    
 }
 
 -(void) updateLabelsPulseSensorInterfaceElements{
@@ -596,7 +606,7 @@ int beatsSampleCounter = 0;
 
 
 /////////////////////////////////////
-#pragma Arduino Pin Controle
+#pragma Arduino Pin Control
 /////////////////////////////////////
 
 -(void) blinkLEDPin4ON{
@@ -617,6 +627,49 @@ int beatsSampleCounter = 0;
     NSData *data = [[NSData alloc] initWithBytes:buf length:3];
     [readBearBLEinstance  write:data];
 }
+
+
+-(void) displayEmotionalImageFromBPM:(int) bpm{
+    
+    NSLog(@" ❤❤❤   BPM: %i   ❤❤❤", bpm);
+    
+    if (bpm < 70 && bpm > 50) {
+        [self displayImageWithName:@"1.png"];
+    }
+    if (bpm > 70 && bpm < 80) {
+        [self displayImageWithName:@"2.png"];
+    }
+    if (bpm > 81 && bpm < 90) {
+        [self displayImageWithName:@"3.png"];
+    }
+    if (bpm > 91 && bpm < 150) {
+        [self displayImageWithName:@"4.png"];
+    }
+    if (bpm < 50 || bpm > 150) {
+        [self displayImageWithName:@"remove"];
+    }
+    
+}
+
+
+- (void) displayImageWithName: (NSString*)name{
+    
+    
+    if (![name isEqualToString:@"remove"]) {
+        [_myImageView setImage:[UIImage imageNamed:name]];
+        [self.view addSubview:_myImageView];
+        NSLog(@"Image Updated");
+    }
+    
+    if ([name isEqualToString:@"remove"]) {
+        [_myImageView removeFromSuperview];
+        NSLog(@"Image Removed");
+    }
+    
+}
+
+
+
 
 
 

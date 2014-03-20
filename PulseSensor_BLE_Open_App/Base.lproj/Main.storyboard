@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dPv-HT-6XW">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -155,6 +155,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-n5-UMk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -172,6 +176,7 @@
                         <outlet property="labelPulseSensorRawSignal" destination="x8s-83-U3G" id="BMa-9N-8e9"/>
                         <outlet property="labelThreshold" destination="WGU-ew-m90" id="m4i-k4-Fg0"/>
                         <outlet property="labelTrough" destination="evu-01-0cn" id="nVh-bG-scD"/>
+                        <outlet property="myImageView" destination="N3P-n5-UMk" id="RAk-P0-72h"/>
                         <outlet property="progressBarAmp" destination="s8s-QU-fcb" id="ZUX-97-QRp"/>
                         <outlet property="progressBarPeak" destination="QiZ-hg-obw" id="eEP-Qq-KoL"/>
                         <outlet property="progressBarPulseSensorSignal" destination="gbj-7h-dDM" id="3Jh-ky-evU"/>
