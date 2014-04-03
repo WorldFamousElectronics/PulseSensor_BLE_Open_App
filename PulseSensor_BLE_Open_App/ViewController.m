@@ -8,6 +8,16 @@
 
 #import "ViewController.h"
 
+extern int globalBPM;
+extern int globalSignal;
+extern BOOL globalBeatDidHappenBOOL;
+extern int globalAlgoTrough;
+extern int globalAlgoPeak;
+extern int globalAlgoThreshold;
+extern int globalAlgoAmplitude;
+
+
+
 @interface ViewController(){
 #pragma public properties and variables
     
@@ -84,6 +94,8 @@ int beatsSampleCounter = 0;
     //  Setup Arduino Interface Elements
     [testLEDProperty setOn:NO animated:YES];
     [swAnalogPinProperty setOn:NO animated:YES];
+    [_swVisualize setOn:NO animated:YES];
+
     [progressBarPulseSensorSignal setProgress:0.05];
     
     // Setup PS Interface Elements
@@ -235,6 +247,9 @@ int beatsSampleCounter = 0;
             //   NSLog(@"value is %d and float is %f", Value, Value*0.001 );
             
             PulseSensorValue = Value;
+            
+            globalSignal = PulseSensorValue;
+            
             [self PulseSensorFullCode:PulseSensorValue];
             [progressBarPulseSensorSignal setProgress:Value*0.001 animated:NO];
             
@@ -242,6 +257,12 @@ int beatsSampleCounter = 0;
             
         }
     }
+    
+    globalAlgoTrough = Trough;
+    globalAlgoPeak = Peak;
+    globalAlgoThreshold = Threshold;
+    globalAlgoAmplitude = Amplitude;
+
 }
 
 
@@ -448,6 +469,8 @@ int beatsSampleCounter = 0;
         [self blinkLEDPin4OFF];     // when the values are going down, the beat is over, turn off pin 13 LED
         [labelHeart setAlpha:0.2];
         
+        globalBeatDidHappenBOOL = false;
+        
         Pulse = false;                          // reset Pulse Flag
         Amplitude = Peak - Trough;                 //  get Amp of Pulse Wave
         Threshold = Amplitude/2 + Trough;       // set the Thresholdat 50% of Amp
@@ -484,6 +507,9 @@ int beatsSampleCounter = 0;
 -(void) beatDetectedDoInterfaceStuff{
     
     [self blinkLEDPin4ON];
+
+    globalBeatDidHappenBOOL = true;
+
     
     [labelHeart setAlpha:1.0];
     [labelHeart setTextColor:[UIColor redColor]];
@@ -504,9 +530,12 @@ int beatsSampleCounter = 0;
     //    if (timeBetweenBeats > timeSinceLastBeat+0.20  || timeBetweenBeats < timeSinceLastBeat-0.20 || timeBetweenBeats < 0.5 || timeBetweenBeats > 1.3) {
     if (timeBetweenBeats < 0.5 || timeBetweenBeats > 1.3) {
         RealQualifiedBeat = FALSE;
+   //     globalBeatDidHappenBool = RealQualifiedBeat;
         NSLog(@"RealQualifiedBeat is FALSE");
     } else{
         RealQualifiedBeat = TRUE;
+    //    globalBeatDidHappenBool = RealQualifiedBeat;
+
         NSLog(@"RealQualifiedBeat is TRUE");
         
     }
@@ -552,6 +581,11 @@ int beatsSampleCounter = 0;
             [labelBPM setText:[NSString stringWithFormat:@"%i",BPM]];
         }
         
+    
+        
+        //globalBPM = BPM;
+        globalBPM = BPM;
+        
         lastBPM = BPM;
         
     } else if (beatsSampleCounter <= 9){
@@ -560,7 +594,7 @@ int beatsSampleCounter = 0;
     }
     
     // send Image Change method
-    [self displayEmotionalImageFromBPM:BPM];
+  //  [self displayEmotionalImageFromBPM:BPM];
     
     
 }
@@ -669,6 +703,48 @@ int beatsSampleCounter = 0;
 }
 
 
+
+
+
+
+
+- (IBAction)swVisualizePushhed:(id)sender {
+    if(_swVisualize.on){
+
+        // launch Visualization
+        NSLog(@"launch Vis");
+        
+//        // Configure the view.
+        SKView * skView = (SKView *)self.view;
+        skView.showsFPS = YES;
+//        skView.showsNodeCount = YES;
+        
+        // Create and configure the scene.
+//        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+//        scene.scaleMode = SKSceneScaleModeAspectFill;
+    //    ((MyScene *)scene).delegate = self;
+        
+        
+        
+        // Present the scene.
+   //     [skView presentScene:scene];
+        
+        
+    }  else {
+        
+        //  remove Visualization
+        
+    }
+
+    
+}
+
+
+
+-(void) myScene:(MyScene *)myScene didGenerateString:(NSString *)string{
+    NSLog(@" %@ send the string: %@", myScene, string);
+    
+}
 
 
 

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49A-UR-T8p">
-                                <rect key="frame" x="14" y="437" width="280" height="30"/>
+                                <rect key="frame" x="14" y="446" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Connect to BLE Device">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,51 +28,51 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="BLE Status Message" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="aXi-jg-H6N">
-                                <rect key="frame" x="14" y="419" width="286" height="21"/>
+                                <rect key="frame" x="14" y="428" width="286" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="faS-iN-bLA">
-                                <rect key="frame" x="112" y="413" width="188" height="3"/>
+                                <rect key="frame" x="112" y="422" width="188" height="3"/>
                                 <color key="progressTintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </progressView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="BLE Signal :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzx-oh-XCT">
-                                <rect key="frame" x="14" y="402" width="84" height="21"/>
+                                <rect key="frame" x="14" y="411" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="acr-qg-Qiz">
-                                <rect key="frame" x="265" y="443" width="20" height="20"/>
+                                <rect key="frame" x="265" y="452" width="20" height="20"/>
                             </activityIndicatorView>
                             <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-Hq-vZW">
-                                <rect key="frame" x="251" y="341" width="51" height="31"/>
+                                <rect key="frame" x="251" y="333" width="51" height="31"/>
                                 <connections>
                                     <action selector="swTestLED:" destination="2" eventType="valueChanged" id="IYZ-4w-FJp"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Test LED (Pin D4)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-jf-fBC">
-                                <rect key="frame" x="15" y="342" width="133" height="21"/>
+                                <rect key="frame" x="15" y="334" width="133" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="BLE Name : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U64-gZ-NHd">
-                                <rect key="frame" x="14" y="386" width="142" height="21"/>
+                                <rect key="frame" x="14" y="395" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Pulse Sensor  (Pin A5)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-Hf-MJV">
-                                <rect key="frame" x="15" y="308" width="170" height="21"/>
+                                <rect key="frame" x="15" y="300" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ud0-qv-qPm">
-                                <rect key="frame" x="251" y="307" width="51" height="31"/>
+                                <rect key="frame" x="251" y="299" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="swAnalogPinMonitor:" destination="2" eventType="valueChanged" id="BmF-pH-uIV"/>
@@ -155,14 +155,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-n5-UMk">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Pulse Sensor BLE " id="tGg-DT-AE2"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="glJ-yn-9Mf"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Pulse Sensor BLE " id="tGg-DT-AE2">
+                        <barButtonItem key="rightBarButtonItem" title="Visual" id="cbS-bc-mKO">
+                            <connections>
+                                <segue destination="1er-KB-i04" kind="push" id="cvO-ib-PR4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicatorBLE" destination="acr-qg-Qiz" id="3c8-Ws-cxA"/>
                         <outlet property="buttonBLEConnectDisconnect" destination="49A-UR-T8p" id="ygN-0H-2si"/>
@@ -176,7 +182,6 @@
                         <outlet property="labelPulseSensorRawSignal" destination="x8s-83-U3G" id="BMa-9N-8e9"/>
                         <outlet property="labelThreshold" destination="WGU-ew-m90" id="m4i-k4-Fg0"/>
                         <outlet property="labelTrough" destination="evu-01-0cn" id="nVh-bG-scD"/>
-                        <outlet property="myImageView" destination="N3P-n5-UMk" id="RAk-P0-72h"/>
                         <outlet property="progressBarAmp" destination="s8s-QU-fcb" id="ZUX-97-QRp"/>
                         <outlet property="progressBarPeak" destination="QiZ-hg-obw" id="eEP-Qq-KoL"/>
                         <outlet property="progressBarPulseSensorSignal" destination="gbj-7h-dDM" id="3Jh-ky-evU"/>
@@ -190,6 +195,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="108" y="-39"/>
+        </scene>
+        <!--View Controller2 View Controller-->
+        <scene sceneID="VUA-CE-GTA">
+            <objects>
+                <viewController id="1er-KB-i04" customClass="ViewController2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CzK-IC-EBj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVN-Ot-IeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FRb-GN-tUb" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH6-RI-v6N">
+                                <rect key="frame" x="168" y="58" width="167" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Visualization I">
+                                    <color key="titleColor" red="1" green="0.20835382524675172" blue="0.12712815225227558" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonVizPressed:" destination="1er-KB-i04" eventType="touchUpInside" id="i99-of-foL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="esc-cA-7g2"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="4EQ-sa-zEG"/>
+                    <connections>
+                        <outlet property="buttonVisualizations" destination="FH6-RI-v6N" id="wKR-oX-gcy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YV5-vN-gV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="10"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EfT-ZC-1bC">

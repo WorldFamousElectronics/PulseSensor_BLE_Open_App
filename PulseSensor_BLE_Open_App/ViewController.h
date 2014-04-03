@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BLE.h"
+#import "MyScene.h"
+@import SpriteKit;
 
-@interface ViewController : UIViewController <BLEDelegate>  //Make ViewController the BLE Delegate
 
+@interface ViewController : UIViewController <BLEDelegate, MySceneDelegate>  //Make ViewController the BLE Delegate
 
 
 
@@ -67,5 +69,8 @@
 
 //  For New Image Overlay
 @property (strong , nonatomic) IBOutlet UIImageView *myImageView;
+
+- (IBAction)swVisualizePushhed:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *swVisualize;
 
 @end

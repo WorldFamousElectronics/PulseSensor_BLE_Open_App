@@ -10,6 +10,15 @@
 
 #import "AppDelegate.h"
 
+int globalBPM;
+int globalSignal;
+BOOL globalBeatDidHappenBOOL;
+int globalAlgoTrough;
+int globalAlgoPeak;
+int globalAlgoThreshold;
+int globalAlgoAmplitude;
+
+
 int main(int argc, char * argv[])
 {
     @autoreleasepool {

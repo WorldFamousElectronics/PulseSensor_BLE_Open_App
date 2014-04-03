@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C36DCE218EB62E200DB67A1 /* MyScene2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C36DCE118EB62E200DB67A1 /* MyScene2.m */; };
+		6C36DCE518EB69A200DB67A1 /* MyScene3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C36DCE418EB69A200DB67A1 /* MyScene3.m */; };
+		6C36DD3218EB973200DB67A1 /* BeatParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C36DD3018EB973200DB67A1 /* BeatParticles.sks */; };
+		6C36DD3318EB973200DB67A1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C36DD3118EB973200DB67A1 /* spark.png */; };
+		6C36DD3618ECA92800DB67A1 /* InheritedMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C36DD3518ECA92800DB67A1 /* InheritedMyScene.m */; };
+		6C36DD3918ECB0A500DB67A1 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C36DD3718ECB0A500DB67A1 /* MyParticle.sks */; };
+		6C36DD3A18ECB0A500DB67A1 /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C36DD3818ECB0A500DB67A1 /* bokeh.png */; };
+		6C36DD3C18ECB10F00DB67A1 /* MyParticleFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C36DD3B18ECB10F00DB67A1 /* MyParticleFire.sks */; };
 		6C8504F118DA34FD006F3776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F018DA34FD006F3776 /* Foundation.framework */; };
 		6C8504F318DA34FD006F3776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F218DA34FD006F3776 /* CoreGraphics.framework */; };
 		6C8504F518DA34FD006F3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F418DA34FD006F3776 /* UIKit.framework */; };
@@ -22,10 +30,9 @@
 		6C85051A18DA34FD006F3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C85051818DA34FD006F3776 /* InfoPlist.strings */; };
 		6C85051C18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */; };
 		6C85052918DA3550006F3776 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85052718DA3550006F3776 /* BLE.m */; };
-		6C94813218DB6330006E4103 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94812E18DB6330006E4103 /* 2.png */; };
-		6C94813318DB6330006E4103 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94812F18DB6330006E4103 /* 4.png */; };
-		6C94813418DB6330006E4103 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94813018DB6330006E4103 /* 3.png */; };
-		6C94813518DB6330006E4103 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C94813118DB6330006E4103 /* 1.png */; };
+		6C9BF4D518DE265A00FA8E70 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF4D418DE265A00FA8E70 /* MyScene.m */; };
+		6C9BF4D718DE296500FA8E70 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */; };
+		6C9BF52018DE477300FA8E70 /* ViewController2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF51F18DE477300FA8E70 /* ViewController2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C36DCE018EB62E200DB67A1 /* MyScene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene2.h; sourceTree = "<group>"; };
+		6C36DCE118EB62E200DB67A1 /* MyScene2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene2.m; sourceTree = "<group>"; };
+		6C36DCE318EB69A200DB67A1 /* MyScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene3.h; sourceTree = "<group>"; };
+		6C36DCE418EB69A200DB67A1 /* MyScene3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene3.m; sourceTree = "<group>"; };
+		6C36DD3018EB973200DB67A1 /* BeatParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BeatParticles.sks; sourceTree = "<group>"; };
+		6C36DD3118EB973200DB67A1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		6C36DD3418ECA92800DB67A1 /* InheritedMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritedMyScene.h; sourceTree = "<group>"; };
+		6C36DD3518ECA92800DB67A1 /* InheritedMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritedMyScene.m; sourceTree = "<group>"; };
+		6C36DD3718ECB0A500DB67A1 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		6C36DD3818ECB0A500DB67A1 /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		6C36DD3B18ECB10F00DB67A1 /* MyParticleFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticleFire.sks; sourceTree = "<group>"; };
 		6C8504ED18DA34FD006F3776 /* PulseSensor_BLE_Open_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseSensor_BLE_Open_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8504F018DA34FD006F3776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C8504F218DA34FD006F3776 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +79,11 @@
 		6C85052618DA3550006F3776 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		6C85052718DA3550006F3776 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		6C85052818DA3550006F3776 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
-		6C94812E18DB6330006E4103 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		6C94812F18DB6330006E4103 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
-		6C94813018DB6330006E4103 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		6C94813118DB6330006E4103 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		6C9BF4D318DE265A00FA8E70 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		6C9BF4D418DE265A00FA8E70 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		6C9BF51E18DE477300FA8E70 /* ViewController2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2ViewController.h; sourceTree = "<group>"; };
+		6C9BF51F18DE477300FA8E70 /* ViewController2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9BF4D718DE296500FA8E70 /* SpriteKit.framework in Frameworks */,
 				6C8504F318DA34FD006F3776 /* CoreGraphics.framework in Frameworks */,
 				6C8504F518DA34FD006F3776 /* UIKit.framework in Frameworks */,
 				6C8504F118DA34FD006F3776 /* Foundation.framework in Frameworks */,
@@ -113,6 +133,7 @@
 		6C8504EF18DA34FD006F3776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */,
 				6C85052518DA3550006F3776 /* BLE_Framework */,
 				6C8504F018DA34FD006F3776 /* Foundation.framework */,
 				6C8504F218DA34FD006F3776 /* CoreGraphics.framework */,
@@ -125,15 +146,26 @@
 		6C8504F618DA34FD006F3776 /* PulseSensor_BLE_Open_App */ = {
 			isa = PBXGroup;
 			children = (
+				6C85050218DA34FD006F3776 /* Main.storyboard */,
+				6C36DCE418EB69A200DB67A1 /* MyScene3.m */,
+				6C36DD3418ECA92800DB67A1 /* InheritedMyScene.h */,
+				6C36DD3518ECA92800DB67A1 /* InheritedMyScene.m */,
+				6C36DCE318EB69A200DB67A1 /* MyScene3.h */,
 				6C8504FF18DA34FD006F3776 /* AppDelegate.h */,
 				6C85050018DA34FD006F3776 /* AppDelegate.m */,
-				6C85050218DA34FD006F3776 /* Main.storyboard */,
+				6C9BF4D318DE265A00FA8E70 /* MyScene.h */,
+				6C9BF4D418DE265A00FA8E70 /* MyScene.m */,
+				6C36DCE018EB62E200DB67A1 /* MyScene2.h */,
+				6C36DCE118EB62E200DB67A1 /* MyScene2.m */,
+				6C36DD3018EB973200DB67A1 /* BeatParticles.sks */,
+				6C36DD3718ECB0A500DB67A1 /* MyParticle.sks */,
+				6C36DD3B18ECB10F00DB67A1 /* MyParticleFire.sks */,
+				6C36DD3818ECB0A500DB67A1 /* bokeh.png */,
+				6C36DD3118EB973200DB67A1 /* spark.png */,
+				6C9BF51E18DE477300FA8E70 /* ViewController2ViewController.h */,
+				6C9BF51F18DE477300FA8E70 /* ViewController2ViewController.m */,
 				6C85050518DA34FD006F3776 /* ViewController.h */,
 				6C85050618DA34FD006F3776 /* ViewController.m */,
-				6C94812E18DB6330006E4103 /* 2.png */,
-				6C94812F18DB6330006E4103 /* 4.png */,
-				6C94813018DB6330006E4103 /* 3.png */,
-				6C94813118DB6330006E4103 /* 1.png */,
 				6C85050818DA34FD006F3776 /* Images.xcassets */,
 				6C8504F718DA34FD006F3776 /* Supporting Files */,
 			);
@@ -256,12 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C85050918DA34FD006F3776 /* Images.xcassets in Resources */,
+				6C36DD3318EB973200DB67A1 /* spark.png in Resources */,
 				6C8504FB18DA34FD006F3776 /* InfoPlist.strings in Resources */,
-				6C94813218DB6330006E4103 /* 2.png in Resources */,
-				6C94813418DB6330006E4103 /* 3.png in Resources */,
-				6C94813318DB6330006E4103 /* 4.png in Resources */,
+				6C36DD3218EB973200DB67A1 /* BeatParticles.sks in Resources */,
 				6C85050418DA34FD006F3776 /* Main.storyboard in Resources */,
-				6C94813518DB6330006E4103 /* 1.png in Resources */,
+				6C36DD3C18ECB10F00DB67A1 /* MyParticleFire.sks in Resources */,
+				6C36DD3918ECB0A500DB67A1 /* MyParticle.sks in Resources */,
+				6C36DD3A18ECB0A500DB67A1 /* bokeh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C85050718DA34FD006F3776 /* ViewController.m in Sources */,
+				6C9BF4D518DE265A00FA8E70 /* MyScene.m in Sources */,
+				6C36DCE218EB62E200DB67A1 /* MyScene2.m in Sources */,
+				6C36DD3618ECA92800DB67A1 /* InheritedMyScene.m in Sources */,
 				6C85050118DA34FD006F3776 /* AppDelegate.m in Sources */,
+				6C36DCE518EB69A200DB67A1 /* MyScene3.m in Sources */,
 				6C8504FD18DA34FD006F3776 /* main.m in Sources */,
+				6C9BF52018DE477300FA8E70 /* ViewController2ViewController.m in Sources */,
 				6C85052918DA3550006F3776 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
