@@ -22,6 +22,7 @@ extern int globalAlgoAmplitude;
 
     SKLabelNode *myLabel;
     SKLabelNode *bullet;
+    SKLabelNode* labelBPM;
     
     
     ///  dotShape
@@ -45,11 +46,9 @@ extern int globalAlgoAmplitude;
         /* Setup your scene here */
         
         self.physicsWorld.gravity = CGVectorMake(-4.8, 0.0);
-        
         self.backgroundColor = [SKColor whiteColor];
         
         myLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
-        
         myLabel.text = [NSString stringWithFormat:@"Signal: %i    Qualified Beat Happened: %i     BPM: %i", globalSignal,globalBeatDidHappenBOOL, globalBPM];
         
         myLabel.fontSize = 12;
@@ -60,6 +59,7 @@ extern int globalAlgoAmplitude;
         myLabel.horizontalAlignmentMode= SKLabelHorizontalAlignmentModeLeft;
         
         [self addChild:myLabel];
+        [self setupLabelBPM];
     }
     return self;
 }
@@ -77,8 +77,9 @@ extern int globalAlgoAmplitude;
     /* Called before each frame is rendered */
 
 
-        myLabel.text = [NSString stringWithFormat:@"Signal: %i    Qualified Beat Happened: %i     BPM: %i", globalSignal,globalBeatDidHappenBOOL, globalBPM];
-
+    myLabel.text = [NSString stringWithFormat:@"Signal: %i    Qualified Beat Happened: %i     BPM: %i", globalSignal,globalBeatDidHappenBOOL, globalBPM];
+    [labelBPM setText:[NSString stringWithFormat:@"%i",globalBPM]];
+    
     
     if (_lastUpdateTime) {
         _dt = currentTime - _lastUpdateTime;
@@ -91,8 +92,19 @@ extern int globalAlgoAmplitude;
     if (_bulletInterval > 0.010) {
         _bulletInterval = 0;
         
+        if (globalBeatDidHappenBOOL) {
+           // [labelBPM setFontColor:[UIColor purpleColor]];
+            labelBPM.fontSize = 75;
+        } else{
+           // [labelBPM setFontColor:[UIColor redColor]];
+            labelBPM.fontSize = 70;
+
+        }
         [self makeDots];
-     //   [self makeAlgoGraphic1];
+    
+        
+        
+      //     [self makeAlgoGraphic1];
 
     }
 
@@ -140,7 +152,23 @@ extern int globalAlgoAmplitude;
 
     }
 
+#pragma On-Screen BPM Code
+-(void) setupLabelBPM{
+    
+    labelBPM = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
+    labelBPM.text = [NSString stringWithFormat:@"BPM: %i", globalBPM];
+    labelBPM.fontSize = 70;
+    labelBPM.position = CGPointMake(self.frame.size.width/2,
+                                    self.frame.size.height/6 + self.frame.size.height/2);
+    labelBPM.fontColor = [UIColor redColor];
+    labelBPM.horizontalAlignmentMode= SKLabelHorizontalAlignmentModeCenter;
+    [self addChild:labelBPM];
+    
+    
+}
 
+
+#pragma Scrolling Visualizer Code
 -(void) makeAlgoGraphic1{
     
     flatLine1 = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(7, 7)];

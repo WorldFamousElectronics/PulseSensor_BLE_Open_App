@@ -81,7 +81,7 @@ int beatsSampleCounter = 0;
     
     // Create an Instance of BLE from Red Bear Lab's Framework
     readBearBLEinstance = [[BLE alloc]init];
-    [readBearBLEinstance controlSetup:1];   // not sure ??
+    [readBearBLEinstance controlSetup];
     readBearBLEinstance.delegate = self;    // set Instance Delegate to self this ViewController
     
     // Setup BLE Interface Elements
@@ -143,7 +143,7 @@ int beatsSampleCounter = 0;
     
     //  IF ALREADY CONNECTED
     if (readBearBLEinstance.activePeripheral){
-        if (readBearBLEinstance.activePeripheral.isConnected) {
+        if (readBearBLEinstance.activePeripheral.state == CBPeripheralStateConnected) {
             // iPhone is Connected, Tell it to Disconnect
             [[readBearBLEinstance CM] cancelPeripheralConnection:readBearBLEinstance.activePeripheral];
             
@@ -187,7 +187,9 @@ int beatsSampleCounter = 0;
     
     // BLE Interface
     //Labels
-    [labelBLEMessageAndUUID setText:[NSString stringWithFormat:@"UUID: %s",[readBearBLEinstance UUIDToString:readBearBLEinstance.activePeripheral.UUID]]];
+  //  [labelBLEMessageAndUUID setText:[NSString stringWithFormat:@"UUID: %s",[readBearBLEinstance
+                                                                            
+                                                                       //     UUIDToString:readBearBLEinstance.activePeripheral.UUID]]];
     [labelBLEName setText:[NSString stringWithFormat:@"BLE Name: %s",[readBearBLEinstance.activePeripheral.name cStringUsingEncoding:NSStringEncodingConversionAllowLossy ]]];
     [labelBLESignal setText:@"BLE Signal:"];
     
@@ -275,54 +277,7 @@ int beatsSampleCounter = 0;
     
     if (readBearBLEinstance.peripherals.count >0)
     {
-        
-        //  REMOVE COMMENT TO CONNECT TO FIRST AVAILABLE DEVICE
-        //  [readBearBLEinstance connectPeripheral:[readBearBLEinstance.peripherals objectAtIndex:0]];
-        
-        // THIS HARD-CODES UUID OF ONE RED BEAR BLE DEVICE
-        
-        
-        
-        for(int i = 0; i < readBearBLEinstance.peripherals.count; i++)
-        {
-            //////////////////////////////////////////////////////////
-            //  PUT YOUR BLE SHEILD UUID HERE, Check DeBug Log Below For Available UUID's
-            // example:  @"A1834B4A-CEF2-AD8B-A13F-20616683B36E";
-            //////////////////////////////////////////////////////////
-            
-            myBlueSheildUUID = @"A1834B4A-CEF2-AD8B-A13F-20616683B36E";
-            myUUIDA = [CBUUID UUIDWithString:myBlueSheildUUID];
-            
-            
-            CBPeripheral *p = [readBearBLEinstance.peripherals objectAtIndex:i];
-            NSMutableString * pUUIDString = [[NSMutableString alloc] initWithFormat:@"%@",CFUUIDCreateString(NULL, p.UUID) ];
-            // Debug Line
-            // NSLog(@"\n++++++\nLooking for your perfered Device UUID of: %@\n", myBlueSheildUUID);
-            
-            // Debug Line
-            //NSLog(@" pUUIDString is: %@\n", pUUIDString);
-            
-            if ([myBlueSheildUUID isEqualToString:pUUIDString]) {
-                NSLog(@"\n\n++++++   Found your Perfered Device UUID of: %@\n\n", myBlueSheildUUID);
-                [readBearBLEinstance connectPeripheral:[readBearBLEinstance.peripherals objectAtIndex:i]];
-                [ labelBLEMessageAndUUID setText:[NSString stringWithFormat:@"%s",[readBearBLEinstance UUIDToString:readBearBLEinstance.activePeripheral.UUID]]];
-                
-                
-            }
-            if (![myBlueSheildUUID isEqualToString:pUUIDString]) {
-                NSLog(@"Found a Bluetooth Device, But doesn't match your UUID \n\n");
-                [ labelBLEMessageAndUUID setText:[NSString stringWithFormat:@"Found Bluetooth Device, Doesn't ur coded UUID"]];
-                
-                
-            }
-            
-            
-        }
-        
-        
-        
-        
-        
+        [readBearBLEinstance connectPeripheral:[readBearBLEinstance.peripherals objectAtIndex:0]];
         
         
     }
@@ -481,7 +436,7 @@ int beatsSampleCounter = 0;
     
     
     // new edge case
-    if (Signal > Threshold && Signal > Trough  && Pulse == true) {
+  //  if (Signal > Threshold && Signal > Trough  && Pulse == true) {
         
         
         //      [self blinkLEDPin4OFF];     // when the values are going down, the beat is over, turn off pin 13 LED
@@ -492,7 +447,7 @@ int beatsSampleCounter = 0;
         //      Threshold = Amplitude/2 + Trough;       // set the Thresholdat 50% of Amp
         //    Peak = Threshold;                          //reset for next time
         //    Trough = Threshold;
-    }
+ //   }
     
     
     
@@ -714,26 +669,9 @@ int beatsSampleCounter = 0;
         // launch Visualization
         NSLog(@"launch Vis");
         
-//        // Configure the view.
+        // Configure the view.
         SKView * skView = (SKView *)self.view;
         skView.showsFPS = YES;
-//        skView.showsNodeCount = YES;
-        
-        // Create and configure the scene.
-//        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-//        scene.scaleMode = SKSceneScaleModeAspectFill;
-    //    ((MyScene *)scene).delegate = self;
-        
-        
-        
-        // Present the scene.
-   //     [skView presentScene:scene];
-        
-        
-    }  else {
-        
-        //  remove Visualization
-        
     }
 
     

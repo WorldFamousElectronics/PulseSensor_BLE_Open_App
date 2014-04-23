@@ -29,10 +29,10 @@
 		6C85051218DA34FD006F3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8504F418DA34FD006F3776 /* UIKit.framework */; };
 		6C85051A18DA34FD006F3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C85051818DA34FD006F3776 /* InfoPlist.strings */; };
 		6C85051C18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */; };
-		6C85052918DA3550006F3776 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C85052718DA3550006F3776 /* BLE.m */; };
 		6C9BF4D518DE265A00FA8E70 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF4D418DE265A00FA8E70 /* MyScene.m */; };
 		6C9BF4D718DE296500FA8E70 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */; };
 		6C9BF52018DE477300FA8E70 /* ViewController2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF51F18DE477300FA8E70 /* ViewController2ViewController.m */; };
+		6CFA5D76190821F800A5CC81 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA5D74190821F800A5CC81 /* BLE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,14 +76,14 @@
 		6C85051718DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulseSensor_BLE_Open_AppTests-Info.plist"; sourceTree = "<group>"; };
 		6C85051918DA34FD006F3776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C85051B18DA34FD006F3776 /* PulseSensor_BLE_Open_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseSensor_BLE_Open_AppTests.m; sourceTree = "<group>"; };
-		6C85052618DA3550006F3776 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
-		6C85052718DA3550006F3776 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
-		6C85052818DA3550006F3776 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		6C9BF4D318DE265A00FA8E70 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		6C9BF4D418DE265A00FA8E70 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		6C9BF51E18DE477300FA8E70 /* ViewController2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2ViewController.h; sourceTree = "<group>"; };
 		6C9BF51F18DE477300FA8E70 /* ViewController2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2ViewController.m; sourceTree = "<group>"; };
+		6CFA5D73190821F800A5CC81 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		6CFA5D74190821F800A5CC81 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		6CFA5D75190821F800A5CC81 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +133,8 @@
 		6C8504EF18DA34FD006F3776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CFA5D72190821F800A5CC81 /* BLE */,
 				6C9BF4D618DE296500FA8E70 /* SpriteKit.framework */,
-				6C85052518DA3550006F3776 /* BLE_Framework */,
 				6C8504F018DA34FD006F3776 /* Foundation.framework */,
 				6C8504F218DA34FD006F3776 /* CoreGraphics.framework */,
 				6C8504F418DA34FD006F3776 /* UIKit.framework */,
@@ -201,14 +201,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6C85052518DA3550006F3776 /* BLE_Framework */ = {
+		6CFA5D72190821F800A5CC81 /* BLE */ = {
 			isa = PBXGroup;
 			children = (
-				6C85052618DA3550006F3776 /* BLE.h */,
-				6C85052718DA3550006F3776 /* BLE.m */,
-				6C85052818DA3550006F3776 /* BLEDefines.h */,
+				6CFA5D73190821F800A5CC81 /* BLE.h */,
+				6CFA5D74190821F800A5CC81 /* BLE.m */,
+				6CFA5D75190821F800A5CC81 /* BLEDefines.h */,
 			);
-			path = BLE_Framework;
+			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,12 +316,12 @@
 				6C85050718DA34FD006F3776 /* ViewController.m in Sources */,
 				6C9BF4D518DE265A00FA8E70 /* MyScene.m in Sources */,
 				6C36DCE218EB62E200DB67A1 /* MyScene2.m in Sources */,
+				6CFA5D76190821F800A5CC81 /* BLE.m in Sources */,
 				6C36DD3618ECA92800DB67A1 /* InheritedMyScene.m in Sources */,
 				6C85050118DA34FD006F3776 /* AppDelegate.m in Sources */,
 				6C36DCE518EB69A200DB67A1 /* MyScene3.m in Sources */,
 				6C8504FD18DA34FD006F3776 /* main.m in Sources */,
 				6C9BF52018DE477300FA8E70 /* ViewController2ViewController.m in Sources */,
-				6C85052918DA3550006F3776 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

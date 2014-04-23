@@ -35,13 +35,6 @@
     [_buttonVisualizations setSelected:YES];
     [_buttonVisualizations setEnabled:YES];
     [self makeFirstScene];
-
-
-
-    
-    
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,26 +54,51 @@
 }
 */
 
+//  Control Which Visualization Appears
 - (IBAction)buttonVizPressed:(id)sender {
     
     static int counter =1;
     
     if (counter == 0) {
-        [self makeFirstScene];
-         }
+        
+        NSLog(@"First Visulization");
+        
+        // Configure the view.
+        SKView * skView = (SKView *)self.view;
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        
+        // Create and configure the scene.
+        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+        [ _buttonVisualizations setTitle:@"Visualization I" forState:UIControlStateNormal];
+
+    }
     
     if (counter == 1) {
         
    
-        [self makeMyScene];
+        // Configure the view.
+        SKView * skView = (SKView *)self.view;
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
         
-        [ _buttonVisualizations setTitle:@"Visualization I" forState:UIControlStateNormal];
+        // Create and configure the scene.
+        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+        [ _buttonVisualizations setTitle:@"Visualization II" forState:UIControlStateNormal];
         
       //   counter++;
     }
     
     if (counter == 2) {
-        [ _buttonVisualizations setTitle:@"Visualization II" forState:UIControlStateNormal];
+        [ _buttonVisualizations setTitle:@"Visualization III" forState:UIControlStateNormal];
         
         
         NSLog(@"second viewdidload");
@@ -114,7 +132,7 @@
         // Present the scene.
         [skView presentScene:scene];
        
-        [ _buttonVisualizations setTitle:@"Visualization III" forState:UIControlStateNormal];
+        [ _buttonVisualizations setTitle:@"Visualization VI" forState:UIControlStateNormal];
 
         counter = -1.0;
     }
@@ -130,11 +148,11 @@
 }
 
 
--(void) makeFirstScene{
+-(void) makeFirstSceneName:(NSString*) sceneName ButtonTitle:(NSString*)buttonTitle {
     [ _buttonVisualizations setTitle:@"Visualization 0" forState:UIControlStateNormal];
     
     
-    NSLog(@"second viewdidload");
+    NSLog(@"Display %@", sceneName);
     
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -142,11 +160,34 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [InheritedMyScene sceneWithSize:skView.bounds.size];
+  //  SKScene *s =
+    SKScene * scene = [(id)sceneName sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
     [skView presentScene:scene];
+    
+    
+}
+
+-(void) makeFirstScene{
+    [ _buttonVisualizations setTitle:@"Visualization I" forState:UIControlStateNormal];
+    
+    
+    NSLog(@"First Visulization");
+    
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+    
+    // Create and configure the scene.
+    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    // Present the scene.
+    [skView presentScene:scene];
+    [ _buttonVisualizations setTitle:@"Visualization I" forState:UIControlStateNormal];
 
     
 }

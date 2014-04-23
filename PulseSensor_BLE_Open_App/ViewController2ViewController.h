@@ -18,7 +18,7 @@
 
 @interface ViewController2ViewController : ViewController
 @property (weak, nonatomic) IBOutlet UIButton *buttonPressed;
-- (IBAction)buttonAction:(id)sender;
+// - (IBAction)buttonAction:(id)sender;
 
 //Button To Move through Scenes
 @property (weak, nonatomic) IBOutlet UIButton *buttonVisualizations;
